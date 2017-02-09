@@ -45,7 +45,7 @@ class Emoji(object):
 
     @classmethod
     def split_emojis(cls, text):
-        return re.split(cls.unicode_compiled_no_ignore, text)
+        return re.split(cls.unicode_compiled_single_group, text)
 
     @classmethod
     def to_image(cls, text, **kwargs):
